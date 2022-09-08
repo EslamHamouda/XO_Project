@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.tictactoe.ui.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_gameFragment"
+            app:destination="@id/offlineGameFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_startFragment_to_onlineGameFragment3"
+            app:destination="@id/onlineGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/offlineGameFragment"
+        android:name="com.example.tictactoe.ui.OfflineGameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_offline_game" />
+    <fragment
+        android:id="@+id/onlineGameFragment"
+        android:name="com.example.tictactoe.ui.OnlineGameFragment"
+        android:label="fragment_online_game"
+        tools:layout="@layout/fragment_online_game" />
+</navigation>

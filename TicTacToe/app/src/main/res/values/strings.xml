@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tic_tac_toe">Tic Tac Toe!</string>
+    <string name="offline_mode">Offline mode</string>
+    <string name="online_mode">Online mode</string>
+</resources>
